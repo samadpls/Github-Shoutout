@@ -3,7 +3,7 @@
  
 -   GitHub-shoutout is the web application that exhibits one of the registered user's GitHub profiles. Get a chance to win a shoutout by enrolling yourself . Anyone can volunteer by pressing the add your profile drop-down.
 
-## Demo
+## Demo <img src='https://github.com/samadpls/samadpls/blob/main/.github/workflows/cartoon1.gif' height=40>
 <a href='bit.ly/github-shoutout'><img src='images/demo.gif' width=100%></a>
 
 
