@@ -18,7 +18,7 @@ def verifying(username):
             if db.get(username):
                 st.warning("Username already exists")                    
             elif data["followers"] and data["name"] and data["bio"]: # if followers or following is not zero    
-                db.put({"key":username.lower()}) # add entryin database with key lowercase username
+                db.put({"key":username}) # add entryin database with key lowercase username
                 st.success("Username stored in database.") 
             else:
                 st.error("Sorry, you don't have followers or your name and bio is not setup")
