@@ -80,7 +80,7 @@ def main():
     #New username
     with st.expander("Add your profile  :"): # sub header
         text = st.empty()
-        username=text.text_input("Enter your github username",max_chars=20) 
+        username=text.text_input("Enter your github username",max_chars=40) 
     st.markdown(""" `
     Made with 🤍 by samadpls
     `
