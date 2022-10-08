@@ -1,7 +1,7 @@
 import streamlit as st
 import requests,random,time
 from deta import Deta
-Key="d0ioznr7_BVwahBf955uXB5p76Y3R4py3RxC8Adhw" # Project key
+
 deta = Deta(st.secrets['key'])
     # Base key
 db= deta.Base("usernames")    
