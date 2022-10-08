@@ -52,7 +52,7 @@ def random_username():
             </table><br><br>
             <a target="_blank" href="{acc_link}">
                 <button id='btn'>
-                    Follow me on GitHub
+                    Follow {github_username} on GitHub
                 </button><br><br>
             </a></div>""",unsafe_allow_html=True)  #displaying the data
 #         
@@ -71,7 +71,7 @@ def main():
     st.markdown("`Click on the button to see the profile`") # description
 
     
-    if st.button("Show Profile"):
+    if st.button("See Profile"):
         with st.spinner('Wait for it...'):
             time.sleep(2)
         random_username()
