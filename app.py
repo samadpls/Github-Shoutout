@@ -17,11 +17,11 @@ def verifying(username):
 
             if db.get(username):
                 st.warning("Username already exists")                    
-            elif data["followers"]!=0 or data["following"]!=0: # if followers or following is not zero    
+            elif data["followers"] and data["name"] and data["bio"]: # if followers or following is not zero    
                 db.put({"key":username.lower()}) # add entryin database with key lowercase username
                 st.success("Username stored in database.") 
             else:
-                st.error("Sorry, you don't have followers")
+                st.error("Sorry, you don't have followers or your name and bio is not setup")
         except Exception as e: # if username is not valid
             print(e)
             st.error("Invalid github username")
