@@ -86,7 +86,7 @@ def main():
     `
     """) # footer
 
-    verifying(username.strip())
+    verifying(username.strip().lower())
 
 if __name__=="__main__":
     with open('styles.css') as f:
