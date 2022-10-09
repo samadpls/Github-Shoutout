@@ -41,7 +41,7 @@ def random_username():
             <table>
             <tr>
             <th>Stats</th>
-            <th>Streak Color</th>
+            <th>Streak</th>
             <th>Languages</th>
             </tr>
             <tr>
