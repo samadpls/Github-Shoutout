@@ -85,6 +85,14 @@ def main():
     Made with 🤍 by samadpls
     `
     """) # footer
+    
+     with st.expander("Ishika Ishani:https://github.com/ishani-1255"): # sub header
+        text = st.empty()
+        username=text.text_input("ishani-1255",max_chars=40) 
+    st.markdown(""" `
+    Made with 🤍 by samadpls
+    `
+    """)
 
     verifying(username.strip().lower())
 
