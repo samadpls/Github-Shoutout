@@ -17,11 +17,11 @@ def verifying(username):
 
             if db.get(username):
                 st.warning("Username already exists")                    
-            elif data["followers"]!=0 or data["following"]!=0: # if followers or following is not zero    
-                db.put({"key":username.lower()}) # add entryin database with key lowercase username
+            elif data["followers"] and data["name"] and data["bio"]: # if followers or following is not zero    
+                db.put({"key":username}) # add entryin database with key lowercase username
                 st.success("Username stored in database.") 
             else:
-                st.error("Sorry, you don't have followers")
+                st.error("Sorry, you don't have followers or your name and bio is not setup")
         except Exception as e: # if username is not valid
             print(e)
             st.error("Invalid github username")
@@ -41,7 +41,7 @@ def random_username():
             <table>
             <tr>
             <th>Stats</th>
-            <th>Streak Color</th>
+            <th>Streak</th>
             <th>Languages</th>
             </tr>
             <tr>
@@ -80,13 +80,13 @@ def main():
     #New username
     with st.expander("Add your profile  :"): # sub header
         text = st.empty()
-        username=text.text_input("Enter your github username",max_chars=20) 
+        username=text.text_input("Enter your github username",max_chars=40) 
     st.markdown(""" `
     Made with 🤍 by samadpls
     `
     """) # footer
 
-    verifying(username.strip())
+    verifying(username.strip().lower())
 
 if __name__=="__main__":
     with open('styles.css') as f:

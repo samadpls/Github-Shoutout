@@ -1,4 +1,5 @@
-<a href='https://github.com/samadpls/Github-Shoutout'><img src='https://img.shields.io/github/stars/samadpls/Github-Shoutout?style=social'></a><br><br>
+<a href='https://github.com/samadpls/Github-Shoutout'><img src='https://img.shields.io/github/stars/samadpls/Github-Shoutout?style=social'> ![GitHub](https://img.shields.io/github/license/EddieHubCommunity/api?style=social)
+ </a><br><br>
 ![header](images/header.PNG)  
  
 -   GitHub-shoutout is the web application that displays the registered user's GitHub profile. Get a chance to win a shoutout. You just have to enrol yourself. Anyone can volunteer by clicking the "add to your Profile" drop-down menu
