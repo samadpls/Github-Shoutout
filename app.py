@@ -71,7 +71,7 @@ def main():
     st.markdown("`Click on the button to see the profile`") # description
 
     
-    if st.button("See Profile"):
+    if st.button("Press Me"):
         with st.spinner('Wait for it...'):
             time.sleep(2)
         random_username()
