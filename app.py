@@ -62,7 +62,7 @@ def random_username():
 
 
 def main():
-    st.markdown("""<a href='https://github.com/samadpls/Github-Shoutout'><img src='https://img.shields.io/github/stars/samadpls/Github-Shoutout?style=social'></a>""",unsafe_allow_html=True) 
+    st.markdown("""<a href='https://github.com/samadpls/Github-Shoutout'><img src='https://img.shields.io/github/stars/samadpls/Github-Shoutout?color=red&label=star%20me&logoColor=red&style=social'></a>""",unsafe_allow_html=True) 
     img , heading =  st.columns([1,8]) # using columns to display the heading and image
     with img:
         st.image("images/githublogo.png",width=70) # github logo
